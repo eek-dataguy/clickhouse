@@ -1,0 +1,20 @@
+<clickhouse>
+  <!-- Docs: <https://clickhouse.com/docs/operations/settings/settings_users/> -->
+  <users>
+    <default>
+      <!-- User default is available only locally -->
+      <networks>
+        <ip>::1</ip>
+        <ip>127.0.0.1</ip>
+      </networks>
+    </default>
+    <eek>
+      <password>admin123</password>
+      <profile>default</profile>
+      <quota>default</quota>
+      <networks>
+        <ip>0.0.0.0/0</ip>
+      </networks>
+    </eek>
+  </users>
+</clickhouse>
